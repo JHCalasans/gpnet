@@ -10,7 +10,7 @@ namespace appgp.DataAccess
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Estoque> Itens { get; set; }
+        public DbSet<Item> Itens { get; set; }
         public AppDbContext()
         {
             this.Database.EnsureCreated();

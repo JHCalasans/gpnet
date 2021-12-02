@@ -17,9 +17,11 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Entry Placeholder="Nome do item"
+            <Label Text="Nome" Margin="10,10,0,0"></Label>
+            <Entry Placeholder="Nome do item" 
                    Text="{Binding Nome}"
                    Margin="4" />
+            <Label Text="Quantidade" Margin="10,10,0,0"></Label>
             <Entry Placeholder="Quantidade" Keyboard="Numeric"
                    Text="{Binding Quantidade}"
                    Margin="4" />

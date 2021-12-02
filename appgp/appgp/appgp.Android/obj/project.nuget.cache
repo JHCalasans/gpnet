@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DI86VxoCrPcorVG7zzzIw9aMOfEVjX211Ito29+hfN7Jo6s+0cbllgC8qfRRKeYRRPayu0K/dpwBy5fuFGwhoQ==",
+  "dgSpecHash": "TUuWVABradMd7vS7Mzy6Nxez8GqT+FwY+vJCSsg8i9E+kgU8Vzo+1MkDzWrc4FNmSyQ28riDseU4DbSdwNUGnw==",
   "success": true,
   "projectFilePath": "D:\\Repositorios Git\\g&p\\app\\appgp\\appgp\\appgp.Android\\appgp.Android.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\João\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\João\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\system.text.encodings.web\\4.7.1\\system.text.encodings.web.4.7.1.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",

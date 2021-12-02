@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[8.0.0.1909, )"
             },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
             "Xamarin.Essentials.Interfaces": {
               "target": "Package",
               "version": "[1.5.3.2, )"
@@ -120,6 +124,10 @@
             "Prism.Unity.Forms": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             },
             "Xamarin.Essentials.Interfaces": {
               "target": "Package",

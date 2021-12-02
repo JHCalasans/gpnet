@@ -3,6 +3,7 @@ using appgp.Models;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,18 +35,21 @@ namespace appgp.ViewModels
 
         private AppDbContext _context;
 
-        public AddItemPageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        public AddItemPageViewModel(INavigationService navigationService, IPageDialogService dialogService)
+            : base(navigationService, dialogService)
         {
             _context = new AppDbContext();
         }
 
         private async void SaveItem()
         {
-            Estoque item = new Estoque() { Nome = this.Nome, Quantidade = this.Quantidade };
+            Item item = new Item() { Nome = this.Nome, Quantidade = this.Quantidade };
 
             _context.Itens.Add(item);
             _context.SaveChanges();
+
+            await DialogService.DisplayAlertAsync("Aviso", "Item adicionado com sucesso!", "OK");
+
             await NavigationService.NavigateAsync("/NavigationPage/MainPage");
         }
     }

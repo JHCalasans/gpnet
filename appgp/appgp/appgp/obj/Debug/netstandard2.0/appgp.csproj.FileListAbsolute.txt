@@ -12,3 +12,4 @@ D:\Repositorios Git\g&p\app\appgp\appgp\appgp\obj\Debug\netstandard2.0\XamlC.sta
 D:\Repositorios Git\g&p\app\appgp\appgp\appgp\obj\Debug\netstandard2.0\appgp.dll
 D:\Repositorios Git\g&p\app\appgp\appgp\appgp\obj\Debug\netstandard2.0\appgp.pdb
 D:\Repositorios Git\g&p\app\appgp\appgp\appgp\obj\Debug\netstandard2.0\Views\AddItemPage.xaml.g.cs
+D:\Repositorios Git\g&p\app\appgp\appgp\appgp\obj\Debug\netstandard2.0\Views\DetailItemPage.xaml.g.cs
