@@ -44,6 +44,10 @@
       "frameworks": {
         "monoandroid10.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
             "Prism.Unity.Forms": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
@@ -103,6 +107,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

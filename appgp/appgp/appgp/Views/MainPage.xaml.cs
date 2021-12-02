@@ -7,5 +7,10 @@ namespace appgp.Views
         {
             InitializeComponent();
         }
+
+        private void ListItens_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            ListItens.SelectedItem = null;
+        }
     }
 }

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="appgp.Views.AddItemPage"
+             Title="Incluir Item">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar"
+                     Icon="ic_save.png"
+                     Command="{Binding SaveItemCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Nome do item"
+                   Text="{Binding Nome}"
+                   Margin="4" />
+            <Entry Placeholder="Quantidade" Keyboard="Numeric"
+                   Text="{Binding Quantidade}"
+                   Margin="4" />
+         
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

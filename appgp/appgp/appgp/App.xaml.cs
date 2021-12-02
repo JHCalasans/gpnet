@@ -28,6 +28,8 @@ namespace appgp
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<AddItemPage, AddItemPageViewModel>();
+            containerRegistry.RegisterForNavigation<DetailItemPage, DetailItemPageViewModel>();
         }
     }
 }

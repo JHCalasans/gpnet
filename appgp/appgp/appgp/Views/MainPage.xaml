@@ -4,8 +4,48 @@
              x:Class="appgp.Views.MainPage"
              Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
-    </StackLayout>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Novo Item"
+                     Icon="ic_add.png"
+                     Command="{Binding AddItemCommand}" />
+
+        <ToolbarItem Text="Sincronizar"
+                     Icon="refresh.png"
+                     Command="{Binding SincroCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ListView ItemsSource="{Binding TodosItens}"
+              x:Name="ListItens"
+                  HasUnevenRows="True"
+                  ItemTapped="ListItens_ItemTapped"
+                  BackgroundColor="#f5f5f5">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid BackgroundColor="White"
+                              Margin="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0"
+                                   Text="{Binding Nome}"
+                                   FontSize="Medium"
+                                   Margin="4"
+                                   FontAttributes="Bold" />
+                        <StackLayout Orientation="Horizontal"
+                                         Grid.Row="1"
+                                         Margin="4"
+                                         Padding="2">
+                            <Label Text="{Binding Quantidade}"
+                                       FontSize="Small" />
+                            
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 
 </ContentPage>
