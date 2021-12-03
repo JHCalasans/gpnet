@@ -4,6 +4,7 @@ using Prism.Navigation;
 using Prism.Services;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
 
 namespace appgp.ViewModels
@@ -45,5 +46,24 @@ namespace appgp.ViewModels
         {
 
         }
+
+        protected HttpClient IniciarCliente()
+        {
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+
+            var clientDefault = new HttpClient(clientHandler)
+            {
+                Timeout = TimeSpan.FromMilliseconds(40000),
+                BaseAddress = new Uri(_servidor)
+
+            };
+           
+
+
+            return clientDefault;
+        }
+
+        protected static readonly String _servidor = "https://172.18.6.61:44347/api/item/";
     }
 }

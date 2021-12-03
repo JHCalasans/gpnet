@@ -1,5 +1,7 @@
-﻿using appgp.DataAccess;
+﻿using Acr.UserDialogs;
+using appgp.DataAccess;
 using appgp.Models;
+using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -8,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,7 +21,7 @@ namespace appgp.ViewModels
 
         public DelegateCommand AddItemCommand => new DelegateCommand(AddItemAsync);
 
-        public DelegateCommand SincroCommand => new DelegateCommand(AddItemAsync);
+        public DelegateCommand SincroCommand => new DelegateCommand(SincroAsync);
 
         public DelegateCommand<Item> SelectCommand => new DelegateCommand<Item>(SelectItem);
 
@@ -43,6 +46,37 @@ namespace appgp.ViewModels
         {
             await NavigationService.NavigateAsync("AddItemPage");
         }
+
+        private async void SincroAsync()
+        {
+            try
+            {
+                UserDialogs.Instance.ShowLoading("Sincronizando...", MaskType.Gradient);
+
+                string json = JsonConvert.SerializeObject(TodosItens.ToList());
+                StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                using (HttpResponseMessage response = await IniciarCliente().PostAsync("adicionarLista", content))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await DialogService.DisplayAlertAsync("Aviso", "Sincronizado com sucesso!", "OK");
+                    }
+                    else
+                    {
+                        await DialogService.DisplayAlertAsync("Aviso", "Falha ao sincronizar!", "OK");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await DialogService.DisplayAlertAsync("Aviso", "Falha ao sincronizar!", "OK");
+            }
+            finally
+            {
+                UserDialogs.Instance.HideLoading();
+            }
+        }
+
 
         private async void SelectItem(Item item)
         {
