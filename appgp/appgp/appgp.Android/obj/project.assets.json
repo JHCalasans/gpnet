@@ -2084,7 +2084,7 @@
       ]
     },
     "System.Net.Http/4.3.4": {
-      "sha512": "aOa2d51SEbmM+H+Csw7yJOuNZoHkrP2XnAurye5HWYgGVVU54YZDvsLUYRv6h18X3sPnjNCANmN7ZhIPiqMcjA==",
+      "sha512": "Fj7e73NNHwof97gFPTJuq8gv6G895yxkZt14DVnZdEh4gvKl8WrksCwNjIp/JeYX/yu/qxM/iOv9ai+ZY3Fp7Q==",
       "type": "package",
       "path": "system.net.http/4.3.4",
       "files": [
@@ -3449,24 +3449,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\João\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\17254\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositorios Git\\g&p\\app\\appgp\\appgp\\appgp.Android\\appgp.Android.csproj",
+      "projectUniqueName": "E:\\repositorios gp\\app\\gpnet\\appgp\\appgp\\appgp.Android\\appgp.Android.csproj",
       "projectName": "appgp.Android",
-      "projectPath": "D:\\Repositorios Git\\g&p\\app\\appgp\\appgp\\appgp.Android\\appgp.Android.csproj",
-      "packagesPath": "C:\\Users\\João\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositorios Git\\g&p\\app\\appgp\\appgp\\appgp.Android\\obj\\",
+      "projectPath": "E:\\repositorios gp\\app\\gpnet\\appgp\\appgp\\appgp.Android\\appgp.Android.csproj",
+      "packagesPath": "C:\\Users\\17254\\.nuget\\packages\\",
+      "outputPath": "E:\\repositorios gp\\app\\gpnet\\appgp\\appgp\\appgp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\João\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\17254\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3475,15 +3475,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Repositorios Git\\consulta-cliente-api\\LocalPackages": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.devexpress.com/3sh4sborFTf6kKgLmDsoV2f9LXOpulJjAcapgjHkliVdAzwno9/api": {}
       },
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "D:\\Repositorios Git\\g&p\\app\\appgp\\appgp\\appgp\\appgp.csproj": {
-              "projectPath": "D:\\Repositorios Git\\g&p\\app\\appgp\\appgp\\appgp\\appgp.csproj"
+            "E:\\repositorios gp\\app\\gpnet\\appgp\\appgp\\appgp\\appgp.csproj": {
+              "projectPath": "E:\\repositorios gp\\app\\gpnet\\appgp\\appgp\\appgp\\appgp.csproj"
             }
           }
         }

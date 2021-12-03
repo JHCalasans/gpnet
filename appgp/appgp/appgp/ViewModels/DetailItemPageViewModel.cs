@@ -13,18 +13,18 @@ namespace appgp.ViewModels
     public class DetailItemPageViewModel : ViewModelBase
     {
 
-        public DelegateCommand SaveItemCommand => new DelegateCommand(EditItem);
+        public DelegateCommand EditItemCommand => new DelegateCommand(EditItem);
 
         public DelegateCommand DeleteItemCommand => new DelegateCommand(DeleteItem);
 
-        private Item _item;
+        private Item _itemObj;
 
         private AppDbContext _context;
 
-        public Item Item
+        public Item ItemObj
         {
-            get { return _item; }
-            set { SetProperty(ref _item, value); }
+            get { return _itemObj; }
+            set { SetProperty(ref _itemObj, value); }
 
         }
 
@@ -53,7 +53,9 @@ namespace appgp.ViewModels
 
         private async void EditItem()
         {
-            _context.Itens.Update(Item);
+            ItemObj.Nome = Nome;
+            ItemObj.Quantidade = Quantidade;
+            _context.Itens.Update(ItemObj);
             _context.SaveChanges();
             await DialogService.DisplayAlertAsync("Aviso", "Item alterado com sucesso!", "OK");
             await NavigationService.NavigateAsync("/NavigationPage/MainPage");
@@ -61,7 +63,7 @@ namespace appgp.ViewModels
 
         private async void DeleteItem()
         {
-            _context.Itens.Remove(Item);
+            _context.Itens.Remove(ItemObj);
             _context.SaveChanges();
             await DialogService.DisplayAlertAsync("Aviso", "Item removido com sucesso!", "OK");
             await NavigationService.NavigateAsync("/NavigationPage/MainPage");
@@ -71,9 +73,9 @@ namespace appgp.ViewModels
             base.OnNavigatedTo(parameters);
             if (parameters.ContainsKey("Item"))
             {
-              Item = (Item)parameters["Item"];
-              Nome = Item.Nome;
-              Quantidade = Item.Quantidade;
+              ItemObj = (Item)parameters["Item"];
+              Nome = ItemObj.Nome;
+              Quantidade = ItemObj.Quantidade;
             }
         }
     }

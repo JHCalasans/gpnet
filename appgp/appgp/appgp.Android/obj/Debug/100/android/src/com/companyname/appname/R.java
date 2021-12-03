@@ -1059,6 +1059,7 @@ public final class R {
      */
     public static final int chipStyle=0x7f030077;
     /**
+     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1992,7 +1993,10 @@ public final class R {
      */
     public static final int fontStyle=0x7f0300e2;
     /**
-     * OpenType font variation settings, available after api 26.
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -2120,6 +2124,7 @@ public final class R {
      */
     public static final int hoveredFocusedTranslationZ=0x7f0300f5;
     /**
+     * Specifies the drawable used for the application icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2171,6 +2176,7 @@ public final class R {
      */
     public static final int iconStartPadding=0x7f0300fb;
     /**
+     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -2728,6 +2734,7 @@ public final class R {
      */
     public static final int measureWithLargestChild=0x7f030138;
     /**
+     * Menu resource to inflate to be shown in the toolbar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5701,7 +5708,7 @@ public final class R {
      * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.companyname.appname:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.companyname.appname:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeLayout com.companyname.appname:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.companyname.appname:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.companyname.appname:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
      * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.companyname.appname:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
      * <tr><td><code>{@link #ActionBar_itemPadding com.companyname.appname:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
@@ -7257,7 +7264,7 @@ public final class R {
      * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat com.companyname.appname:drawableTopCompat}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.companyname.appname:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_fontFamily com.companyname.appname:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.companyname.appname:fontVariationSettings}</code></td><td>OpenType font variation settings, available after api 26.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.companyname.appname:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.companyname.appname:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_lineHeight com.companyname.appname:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.companyname.appname:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
@@ -9719,7 +9726,7 @@ public final class R {
      * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.companyname.appname:itemTextAppearanceInactive}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.companyname.appname:itemTextColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.companyname.appname:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.companyname.appname:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.companyname.appname:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -9852,8 +9859,9 @@ public final class R {
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
-     * <p>This symbol is the offset where the {@link com.companyname.appname.R.attr#menu}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Menu resource to inflate to be shown in the toolbar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10203,7 +10211,7 @@ public final class R {
      * <tr><td><code>{@link #Chip_chipStartPadding com.companyname.appname:chipStartPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeColor com.companyname.appname:chipStrokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeWidth com.companyname.appname:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.companyname.appname:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.companyname.appname:closeIcon}</code></td><td>Close button icon</td></tr>
      * <tr><td><code>{@link #Chip_closeIconEnabled com.companyname.appname:closeIconEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEndPadding com.companyname.appname:closeIconEndPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconSize com.companyname.appname:closeIconSize}</code></td><td></td></tr>
@@ -10505,8 +10513,9 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link com.companyname.appname.R.attr#closeIcon}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Close button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12044,7 +12053,7 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_font com.companyname.appname:font}</code></td><td>The reference to the font file to be used.</td></tr>
      * <tr><td><code>{@link #FontFamilyFont_fontStyle com.companyname.appname:fontStyle}</code></td><td>The style of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.companyname.appname:fontVariationSettings}</code></td><td>OpenType font variation settings, available after api 26.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.companyname.appname:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
      * <tr><td><code>{@link #FontFamilyFont_fontWeight com.companyname.appname:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
      * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.companyname.appname:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
@@ -12878,11 +12887,11 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_backgroundTint com.companyname.appname:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
      * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.companyname.appname:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_cornerRadius com.companyname.appname:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.companyname.appname:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.companyname.appname:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
      * <tr><td><code>{@link #MaterialButton_iconGravity com.companyname.appname:iconGravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconPadding com.companyname.appname:iconPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconSize com.companyname.appname:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.companyname.appname:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.companyname.appname:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
      * <tr><td><code>{@link #MaterialButton_iconTintMode com.companyname.appname:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_rippleColor com.companyname.appname:rippleColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeColor com.companyname.appname:strokeColor}</code></td><td></td></tr>
@@ -13032,8 +13041,9 @@ public final class R {
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link com.companyname.appname.R.attr#icon}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for the application icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13087,8 +13097,9 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link com.companyname.appname.R.attr#iconTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13828,7 +13839,7 @@ public final class R {
      * action view.</td></tr>
      * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.companyname.appname:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
      * <tr><td><code>{@link #MenuItem_contentDescription com.companyname.appname:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.companyname.appname:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.companyname.appname:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
      * <tr><td><code>{@link #MenuItem_iconTintMode com.companyname.appname:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
      * <tr><td><code>{@link #MenuItem_numericModifiers com.companyname.appname:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
      * <tr><td><code>{@link #MenuItem_showAsAction com.companyname.appname:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
@@ -14376,7 +14387,7 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_itemIconTint com.companyname.appname:itemIconTint}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemTextAppearance com.companyname.appname:itemTextAppearance}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemTextColor com.companyname.appname:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.companyname.appname:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.companyname.appname:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -14533,8 +14544,9 @@ public final class R {
      */
     public static final int NavigationView_itemTextColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.companyname.appname.R.attr#menu}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Menu resource to inflate to be shown in the toolbar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -14925,7 +14937,7 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.companyname.appname:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.companyname.appname:closeIcon}</code></td><td>Close button icon</td></tr>
      * <tr><td><code>{@link #SearchView_commitIcon com.companyname.appname:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
      * <tr><td><code>{@link #SearchView_defaultQueryHint com.companyname.appname:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
@@ -16278,7 +16290,7 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_textFontWeight android:textFontWeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_fontFamily com.companyname.appname:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.companyname.appname:fontVariationSettings}</code></td><td>OpenType font variation settings, available after api 26.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.companyname.appname:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
      * <tr><td><code>{@link #TextAppearance_textAllCaps com.companyname.appname:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
      * <tr><td><code>{@link #TextAppearance_textLocale com.companyname.appname:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
      * for example "ja-JP,zh-CN".</td></tr>
@@ -16993,7 +17005,7 @@ public final class R {
      * <tr><td><code>{@link #Toolbar_logoDescription com.companyname.appname:logoDescription}</code></td><td>A content description string to describe the appearance of the
      * associated logo image.</td></tr>
      * <tr><td><code>{@link #Toolbar_maxButtonHeight com.companyname.appname:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_menu com.companyname.appname:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_menu com.companyname.appname:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * <tr><td><code>{@link #Toolbar_navigationContentDescription com.companyname.appname:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
      * located at the start of the toolbar.</td></tr>
      * <tr><td><code>{@link #Toolbar_navigationIcon com.companyname.appname:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at

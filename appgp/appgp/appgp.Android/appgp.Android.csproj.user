@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Samsung SM-G9650</SelectedDevice>
     <ActiveDebugProfile>Samsung SM-G9650</ActiveDebugProfile>
+    <DefaultDevice>Android_Accelerated_x86_Oreo</DefaultDevice>
   </PropertyGroup>
 </Project>
