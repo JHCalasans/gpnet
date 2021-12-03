@@ -1,0 +1,13 @@
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\bin\Release\netstandard2.0\appgp.deps.json
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\bin\Release\netstandard2.0\appgp.dll
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\bin\Release\netstandard2.0\appgp.pdb
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\appgp.csprojAssemblyReference.cache
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\App.xaml.g.cs
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\Views\AddItemPage.xaml.g.cs
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\Views\DetailItemPage.xaml.g.cs
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\Views\MainPage.xaml.g.cs
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\appgp.AssemblyInfoInputs.cache
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\appgp.AssemblyInfo.cs
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\XamlC.stamp
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\appgp.dll
+E:\repositorios gp\app\gpnet\appgp\appgp\appgp\obj\Release\netstandard2.0\appgp.pdb
